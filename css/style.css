@@ -1,10 +1,8 @@
-
 *
 {
    padding: 0;
    margin: 0;
 }
-
 
 /* root */
 :root {
@@ -61,16 +59,85 @@
    --bs-body-bg: #fff;
  }
 
+ 
+.sidebar {
+   height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #d8d8d8;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 32px;
+ }
+ .sidebar ul li
+ {
+    list-style: none;
+ }
+ .sidebar ul li a h5
+ {
+   display: inline-block;
+   color: #7369f6;
+ }
+ .sidebar ul li a .icon {
+   font-size: 18px;
+   vertical-align: middle;
+   transition: background 1s ease;
+   margin-left: 6px;
+}
+ .sidebar a {
+   padding: 8px 0px 5px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #7c7c7c;
+    display: block;
+    transition: 0.3s;
+ }
+ 
+ .sidebar a:hover {
+   color: #b8b8b8;
+ }
+ 
+ .sidebar .closebtn {
+   position: absolute;
+   top: 0;
+   right: 25px;
+   font-size: 36px;
+   margin-left: 50px;
+ }
+ 
+ .openbtn {
+   font-size: 20px;
+   cursor: pointer;
+   color: rgb(122, 122, 122);
+    font-weight: 900;
+   padding: 5px 10px;
+   background-color: rgba(255, 255, 255, 0);
+   border: none;
+ }
 
- .hover_collapse .sidebar{
+ .openbtn:hover {
+   background-color: rgba(255, 255, 255, 0);
+ }
+ 
+ #main {
+   transition: margin-left .5s;
+   padding: 1px;
+ }
+  @media screen and (max-height: 450px) {
+   .sidebar {padding-top: 15px;}
+   .sidebar a {font-size: 18px;}
+ }
+.hover_collapse .sidebar-icon ul li a .text{
+	display: none;
+}
+.hover_collapse .sidebar-icon{
 	width: 67px;
 }
 
-.hover_collapse .sidebar ul li a .text{
-	display: none;
-}
-
-.sidebar{
+.sidebar-icon{
 	position: fixed;
 	top:0;
 	left: 0;
@@ -80,113 +147,77 @@
    color: rgb(187, 187, 187);
    z-index: 1;
 }
-.sidebar ul li
+.sidebar-icon ul li
 {
    list-style: none;
 }
-.sidebar ul li a{
+.sidebar-icon ul li a{
 	display: block;
 	padding: 10px 2px;
-	/* border-bottom: 1px solid #0e94d4; */
 	color: #696969;
 	transition: 1s;
    font-size: 19px;
    text-decoration: none;
-
 }
-
-
-.sidebar ul li a .icon{
+.sidebar-icon ul li a .icon{
 	font-size: 18px;
 	vertical-align: middle;
 	transition: background 1s ease;
    margin-left: 6px;
+
 }
-.sidebar ul li a .icon2{
+.sidebar-icon ul li a .icon2{
 	font-size: 18px;
 	vertical-align: middle;
 	transition: background 1s ease;
    margin-left: -2px;
 }
-.sidebar ul li a .text{
+.sidebar-icon ul li a .text{
 	margin-left: 10px;
 	color: rgb(128, 128, 128);
 	text-transform: uppercase;
 	letter-spacing: 2px;
 
 }
-.sidebar ul li .active
+.sidebar-icon ul li .active
 {
    background: #6256ee;
    color:white;
-    /* padding: 4px 21px; */
+   
     border-radius: 8px;
 }
-.sidebar ul li a .text2
-{
-   margin-left: 10px;
-   color: #766cf6;
-	text-transform: none;
-	letter-spacing: 2px;
-   display: inline-block;
-}
 
+.sidebar-icon ul li a:hover{
+	color: rgb(231, 231, 231);
+   margin-left:7px;
+	transition: 1s;
+
+}
 .sidebar ul li a:hover{
 	color: #fff;
    margin-left:7px;
 	transition: 1s;
 
 }
-.sidebar ul
-{
-   padding:1rem;
-}
-
-.click_collapse .sidebar{
-   transition: 1s;
-
-}
-
-.main_container{
-	margin-top: 60px;
-	margin-left: 70px;
-	padding: 25px;
-	width: calc(100% - 70px);
-}
-
-.main_container .content{
-	background: #fff;
-	padding: 25px;
-	margin-bottom: 25px;
-	text-align: justify;
-}
-
-.click_collapse .main_container{
-	width: calc(100% , -250px);
-	margin-left: 250px;
-	transition: all 2s ease;
-}
-
-
- 
-
-
-/* div
-{
-   background-color: white;
-   color: black;
-} */
+/* dark-mode body */
 
 .dark-mode {
    background: #333c69;
-   /* transition: 1s; */
+   transition: 0.5s;
    color: rgb(255, 255, 255);
 }
 
-.card-body h5
+.dark-mode .sidebar
 {
-   color:rgb(0, 0, 0) ;
+   background: #242942;
+
 }
+.dark-mode .sidebar-icon
+{
+   background: #242942;
+
+}
+
 .dark-mode .card-body h5
 {
    color:rgb(255, 255, 255) ;
@@ -194,17 +225,13 @@
 .dark-mode .card2{
     color: rgb(255, 255, 255);
     background: #242942;
-    /* transition: .5s; */
+    
  }
  .dark-mode .num1
  {
     color: white;
  }
 
- .navbar-brand 
- {
-    color: rgb(160, 160, 160);
- }
 
 .dark-mode .back-a
 {
@@ -212,43 +239,12 @@
    border: 2px solid #00000000
 
 }
-.bg-dangers
-{
-   z-index: 2;
-   /* background: black; */
-   position: absolute;
-   top: 0;
-   left: 68%;
-   /* color: black; */
-   padding: 3px 6px;
-   border: none;
-}
-
 .dark-mode .back-b
 {
    box-shadow: 0px 0px 0px;
    border: 2px solid #f1f1f100
 
 }
-.back-a
-{
-   background-color: rgb(255, 255 ,255);
-   border-radius: 9px;
-   border: 2px solid #f1f1f1
-   /* box-shadow: 0px 0px 6px 0px; */
-}
-.back-aa i
-{
-   border-radius: 50px;
-    padding: 0px 9px;
-    background: #7879da;
-    /* overflow: hidden; */
-    width: 52px;
-    height: 53px;
-    line-height: 1.8;
-
-}
-
 .dark-mode .sidebar_inner ul li a .icon i
 {
    color: white;
@@ -257,11 +253,49 @@
 {
    color: white;
 }
+
+
+
+
+
+.card-body h5
+{
+   color:rgb(0, 0, 0) ;
+}
+
+.bg-dangers
+{
+   z-index: 2;
+   position: absolute;
+   top: 0;
+   left: 68%;
+   padding: 3px 6px;
+   border: none;
+}
+
+
+.back-a
+{
+   background-color: rgb(255, 255 ,255);
+   border-radius: 9px;
+   border: 2px solid #f1f1f1
+   
+}
+.back-aa i
+{
+   border-radius: 50px;
+    padding: 0px 9px;
+    background: #7879da;
+    width: 52px;
+    height: 53px;
+    line-height: 1.8;
+
+}
+
 .back-b
 {
    background-color: rgb(255, 255 ,255);
    border-radius: 9px;
-   /* box-shadow: 0px 0px 6px 0px; */
    border: 2px solid #f1f1f1
 }
 .back-b i
@@ -269,13 +303,13 @@
    border-radius: 50px;
     padding: 0px 12px;
     background: #ffb87e;
-    /* overflow: hidden; */
     width: 52px;
     height: 53px;
     line-height: 1.8;
 
 }
-.left {
+.left
+{
    width: 20%;
    float: left;
 }
@@ -283,10 +317,10 @@
 {
    background: #e6e6e6;
 }
-/* .navbar-brand
+.navbar-brand 
 {
-   color: rgb(85, 85, 85);
-} */
+   color: rgb(160, 160, 160);
+}
 
 .navbar .navbar-collapse ul li a
 {
@@ -332,7 +366,7 @@
 
 {
     font-size: 13px;
-    /* text-align: end; */
+
     margin-left: 22px;
     color: #686868;
 
@@ -386,7 +420,6 @@
 }
 
 
-
 .Congratulations::after
 {
     content: "";
@@ -398,7 +431,6 @@
     background-image: url(../img/decore-left.2d9d23e0.svg);
     background-repeat: no-repeat;
     background-size: contain;
-
 }
 
 .Congratulations i
@@ -429,7 +461,6 @@
    left: 83.5%;
   
    }
- 
 }
 
 .num1 h1
@@ -498,7 +529,6 @@
 }
 
 .justify-content-between .right-days span .green-text
-
 {
 
    color: #33ff33;
@@ -525,7 +555,7 @@
     width: 210px;
     color: white;
     background: #6e62e7;
-    /* outline: none; */
+
     border: none;
     border-radius: 6px;
     font-size: 17px;
@@ -642,6 +672,8 @@
     font-weight: 200;
     margin-right: 144px;
 }
+
+
 .number1
 {
    background: #2b3253;
@@ -683,7 +715,6 @@
    
 }
 
-
 .number3
 {
    background: #2b3253;
@@ -694,6 +725,13 @@
    height:70vh;
    color: white;
 }
+.number3 .box-shad .timeline-ul li p 
+{
+   margin-bottom: 7px;
+}
+
+
+
 .timeline-time
 {
    font-size: 18px;
@@ -706,7 +744,6 @@
 .colle h6
 {
    font-size: 18px;
-    margin-top: 18px;
     color: gray;
 }
 
@@ -742,36 +779,3 @@
 {
    margin-bottom: 7px;
 }
-.number3 .box-shad .timeline-ul li p 
-{
-   margin-bottom: 7px;
-}
-
-
-
-
-.conte
-{
-
-}
-/*
-
-
-
-
-.number1 h4
-{
-   color: #b9b9b9;
-}
-.dit-product
-{
-   margin-left: -16px;
-       margin-top: 16px;
-}
-
-.dit-product ul li p
-{
-   color: white;
-   font-size: 17px;
-
-} */

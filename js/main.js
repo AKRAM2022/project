@@ -173,19 +173,46 @@ function myFunction() {
                 }
             });
    
-            // function openNav() {
-            //     document.getElementById("mySidenav").style.width = "250px";
-            //   }
-              
-            //   function closeNav() {
-            //     document.getElementById("mySidenav").style.width = "0";
-            //   }
+          
+            var li_items = document.querySelectorAll(".sidebar-icon ul li");
+            var hamburger = document.querySelector(".hamburger");
+            var wrapper = document.querySelector(".wrapper2");
+            
+            
+            li_items.forEach((li_item)=>{
+                li_item.addEventListener("mouseenter", ()=>{
+                    if(wrapper.classList.contains("click_collapse")){
+                        return;
+                    }
+                    else{
+                        li_item.closest(".wrapper2").classList.remove("hover_collapse");
+                    }
+                })
+            })
+            
+            li_items.forEach((li_item)=>{
+                li_item.addEventListener("mouseleave", ()=>{
+                    if(wrapper.classList.contains("click_collapse")){
+                        return;
+                    }
+                    else{
+                        li_item.closest(".wrapper2").classList.add("hover_collapse");
+                    }
+                });
+            });
+            
+            
+            
+            hamburger.addEventListener("click", () => {
+                hamburger.closest(".wrapper2").classList.toggle("click_collapse");
+                hamburger.closest(".wrapper2").classList.toggle("hover_collapse");
+            });
 
-
-var li_items = document.querySelectorAll(".sidebar ul li");
+            
+var li_items = document.querySelectorAll(".sidebar2 ul li");
 var hamburger = document.querySelector(".hamburger");
 var wrapper = document.querySelector(".wrapper");
-// var wrapper = document.querySelector(".addNew");
+
 
 
 li_items.forEach((li_item)=>{
@@ -219,20 +246,20 @@ hamburger.addEventListener("click", () => {
 
 
 
-// //open popep window
-// let addNewButton = document.querySelector(".addNew");
-// let addNewDiv = document.querySelector(".addNewContact");
-// let close = document.querySelector(".close");
-
-// function openLay(){
-//    overlay.style.display = "block";
-//    addNewDiv.style.display = "block";
-// }
-// function closeLay(){
-//    overlay.style.display = "none";
-//    addNewDiv.style.display = "none";
-// }
-// // addNewButton.addEventListener('click',openLay);
-// close.addEventListener('click',closeLay);
 
 
+
+
+function openNav() {
+	document.getElementById("mySidebar").style.width = "243px";
+	
+ }
+ 
+ function closeNav() {
+	document.getElementById("mySidebar").style.width = "0px";
+	document.getElementById("main").style.marginleft= "0";
+ }
+
+ 
+
+ 

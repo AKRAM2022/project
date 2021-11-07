@@ -5,128 +5,211 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
+   <!-- css/all min css -->
    <link rel="stylesheet" href="css/all.min.css">
+   <!-- css/bootstrap.min.css -->
    <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- css/style.css -->
    <link rel="stylesheet" href="css/style.css">
 </head>
 <body> 
  
-      <div class="wrapper hover_collapse">
-        <!-- <div class="wrapper hover_collapse">
-          
-          </div> -->
-          <div class="hamburger" >
-                     
-         <div class="sidebar addNewContact">
-           <div class="sidebar_inner card2">
-  
-          <ul>
-            <li> 
-            <a class="navbar-toggler  addNew bg-dangers" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="icon text-truncate" style="color: #f0f8ff00;" >exit</i></span>
-                <span class="text"><i class="fas fa-times"></i></span>
-             </a>
-            
-             
-          </li> 
+
+   <!--start-wrapper-->
+    <div class="wrapper hover_collapse d-lg-none d-md-block d-md-block">
+    <div class="hamburger" >                  
+     <div class="sidebar addNewContact">
+      <div class="sidebar_inner card2">
+        <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <ul>
+        <li>
+          <a href="#">
+            <img class="icon icon2" src="img/Logo.svg" alt="" class="img-fluid mx-1">
+            <h5 class="text text2" class="title-logo  fs-4 color-logo hide-80 d-inline-block">Vuesax</h5>
+          </a>
+        </li>
+
           <li>
-            <a href="#">
-              <img class="icon icon2" src="img/Logo.svg" alt="" class="img-fluid mx-1">
-              <h5 class="text text2" class="title-logo  fs-4 color-logo hide-80 d-inline-block">Vuesax</h5>
-            </a>
-          </li>
-
-            <li>
-                <a href="#" class="active">
-                   <span class="icon"><i class="far fa-circle" ></i></span>
-                   <span class="text text-white">  Analytics</span>
-                </a>
-             </li>
-           <li>
-              <a href="#">
+              <a href="#" class="active">
                  <span class="icon"><i class="far fa-circle" ></i></span>
-                 <span class="text">eCommerce</span>
+                 <span class="text text-white">  Analytics</span>
               </a>
            </li>
-           <li>
-              <a href="#">
-                 <span class="icon"><i class="far fa-comment-alt"></i></span>
-                 <span class="text">Chat</span>
-              </a>
-           </li>
-           <li>
-              <a href="#">
-                 <span class="icon"><i class="far fa-envelope"></i></i></span>
-                 <span class="text">Email</span>
-              </a>
-           </li>
-           <li>
-              <a href="#">
-                 <span class="icon"><i class="far fa-calendar-check"></i></span>
-                 <span class="text">Todo</span>
-              </a>
-           </li>
-           <li>
-              <a href="#">
-                 <span class="icon"><i class="far fa-calendar"> </i></span>
-                 <span class="text">Calendar</span>
-              </a>
-           </li>
-           
-           <li>
+         <li>
             <a href="#">
-               <span class="icon"> <i class="fas fa-credit-card"></i></span>
-               <span class="text">Card</span>
+               <span class="icon"><i class="far fa-circle" ></i></span>
+               <span class="text">eCommerce</span>
             </a>
          </li>
          <li>
             <a href="#">
-               <span class="icon"><i class="fas fa-tint"></i></span>
-               <span class="text">Colors</span>
+               <span class="icon"><i class="far fa-comment-alt"></i></span>
+               <span class="text">Chat</span>
             </a>
          </li>
-
          <li>
             <a href="#">
-               <span class="icon"><i class="fas fa-th-large"></i></span>
-               <span class="text">Grid</span>
+               <span class="icon"><i class="far fa-envelope"></i></i></span>
+               <span class="text">Email</span>
+            </a>
+         </li>
+         <li>
+            <a href="#">
+               <span class="icon"><i class="far fa-calendar-check"></i></span>
+               <span class="text">Todo</span>
+            </a>
+         </li>
+         <li>
+            <a href="#">
+               <span class="icon"><i class="far fa-calendar"> </i></span>
+               <span class="text">Calendar</span>
             </a>
          </li>
          <li>
           <a href="#">
-             <span class="icon"><i class="fa fa-table"></i></span>
-             <span class="text">Table</span>
+             <span class="icon"> <i class="fas fa-credit-card"></i></span>
+             <span class="text">Card</span>
           </a>
        </li>
-         
-         <li>
-            <a href="#">
-               <span class="icon"><i class="far fa-building"></i></span>
-               <span class="text">Components</span>
-            </a>
-         </li>
-         
+       <li>
+          <a href="#">
+             <span class="icon"><i class="fas fa-tint"></i></span>
+             <span class="text">Colors</span>
+          </a>
+       </li>
+       <li>
+          <a href="#">
+             <span class="icon"><i class="fas fa-th-large"></i></span>
+             <span class="text">Grid</span>
+          </a>
+       </li>
+       <li>
+        <a href="#">
+           <span class="icon"><i class="fa fa-table"></i></span>
+           <span class="text">Table</span>
+        </a>
+     </li>
+       <li>
+          <a href="#">
+             <span class="icon"><i class="far fa-building"></i></span>
+             <span class="text">Components</span>
+          </a>
+       </li>
+       
         </ul>
-        </div>
-     </div>
-    </div>
+          </div><!--#mySidebar-->
+        </div><!--sidebar_inner card2-->
+      </div><!--addNewContact-->
+     </div><!--hamburger-->
+   </div><!--end-wrapper-->
 
 
+   <!-- start wrapper2-->
+    <div class="wrapper2 hover_collapse d-lg-block d-md-none d-none">
+      <div class="sidebar-icon">
+         <div class="sidebar_inner">
+            <ul class="px-3">
+               <li>
+                  <a href="#">
+                     <span class="icon icon2">  <img class="icon icon2" src="img/Logo.svg" alt="" class="img-fluid mx-1"></span>
+                     <span class="text text2 d-inline-block mx-0"> <h5 class="text text2" class="title-logo  fs-3 color-logo  d-inline-block">Vuesax</h5></span>
+                  </a>
+               
+                  <li>
+                        <a href="#" class="active mt-0">
+                            <span class="icon"><i class="far fa-circle num1" ></i></span>
+                            <span class="text text-white">  Analytics</span>
+                        </a>
+                   </li>
+                <li>
+                     <a href="#">
+                         <span class="icon"><i class="far fa-circle num1" ></i></span>
+                         <span class="text">eCommerce</span>
+                     </a>
+                </li>
+                <li>
+                     <a href="#">
+                         <span class="icon"><i class="far fa-comment-alt num1"></i></span>
+                         <span class="text">Chat</span>
+                     </a>
+                </li>
+                <li>
+                     <a href="#">
+                         <span class="icon"><i class="far fa-envelope num1"></i></i></span>
+                         <span class="text">Email</span>
+                     </a>
+                </li>
+                <li>
+                     <a href="#">
+                         <span class="icon"><i class="far fa-calendar-check"></i></span>
+                         <span class="text">Todo</span>
+                     </a>
+                </li>
+                <li>
+                     <a href="#">
+                         <span class="icon"><i class="far fa-calendar num1"> </i></span>
+                         <span class="text">Calendar</span>
+                     </a>
+                </li>
+                
+                <li>
+                  <a href="#">
+                      <span class="icon"> <i class="fas fa-credit-card num1"></i></span>
+                      <span class="text">Card</span>
+                  </a>
+             </li>
+             <li>
+                  <a href="#">
+                      <span class="icon"><i class="fas fa-tint num1"></i></span>
+                      <span class="text">Colors</span>
+                  </a>
+             </li>
+   
+             <li>
+                  <a href="#">
+                      <span class="icon"><i class="fas fa-th-large num1"></i></span>
+                      <span class="text">Grid</span>
+                  </a>
+             </li>
+             <li>
+               <a href="#">
+                   <span class="icon"><i class="fa fa-table num1"></i></span>
+                   <span class="text">Table</span>
+               </a>
+          </li>
+             
+             <li>
+                  <a href="#">
+                      <span class="icon"><i class="far fa-building num1"></i></span>
+                      <span class="text">Components</span>
+                  </a>
+             </li>
+             
+            </ul>
+         </div><!--sidebar_inner-->
+      </div><!--sidebar-icon-->
+   </div><!--wrapper2-->
 
-       <section class="navbar-colleted ">
+
+   
+    
+   <!--start navbar-colleted-->
+   <section class="navbar-colleted ">
         <div class="container">
          <div class="row">
             <nav class="navbar back-a  navbar-expand-lg border-2  card2  mt-4 " style="height: 75px; border-radius: 13px;">
-               <div class="container-fluid  ">
-                   <a class="navbar-brand " href="#"><i class="far fa-calendar-check num1"></i></a>
-                   <div class="hamburger" >
-                       
-                    <button class="navbar-toggler addNew" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon" >
-                        <i class="fas fa-bars num1"></i>
-                      </span>
-                    </button>
-                  </div>
+               <div class="container-fluid ">
+               <div class="navbar-bra d-lg-block d-md-non d-sm-none">
+                  <a class="navbar-brand d-lg-block d-md-non d-sm-none" href="#"><i class="far fa-calendar-check num1"></i></a>
+                </div><!--navbar-bra-->
+                  <div id="main" class="d-lg-none d-md-block d-md-block">
+                        <button class="openbtn" onclick="openNav()"><i class="fas fa-bars"></i> </button>  
+                     </div><!--main-->
+                  <div>
+                  <a class="nav-link text-primary fs-6 fw-bold d-lg-none d-md-block d-sm-block" active=" id="dark-change" onclick="myFunction()" aria-current="page" href="#"> <i class="far fa-moon"></i></a>   
+                  </div><!--nav-link text-primary-->
+                  
                        
                  <div class="collapse navbar-collapse  h-0" id="navbarNav">
                    <ul class="navbar-nav">
@@ -149,25 +232,21 @@
    
    
                <div class="collapse navbar-collapse"  id="navbarNav">
-                  <ul class="navbar-nav m-4">
-              
+                  <ul class="navbar-nav m-4">       
                     <li class="nav-item">
                       <a class="nav-link text-primary fs-6 fw-bold" active=" id="dark-change" onclick="myFunction()" aria-current="page" href="#">Dark</a>
                     </li>
                     <li class="nav-item">
-                    
-   
                       <a class="nav-link" href="#"><i class="far fa-bell num1"></i></a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link  te" href="#"><i class="fa fa-search num1 "></i></a>
                     </li>
                      <li class="nav-item ">
-   
                       <h6 class="num1">John Doue
                        <span class="num1">Available</span>
                       </h6>
-                       
+                      
                      </li>
                                      
                     <li class="nav-item" style="margin-left: 10px;">
@@ -179,19 +258,16 @@
                     
                   </ul>
                 </div><!--#navbarNav-->
-              
-              
-   
+            
              </nav><!--navbar -->
          </div><!--row-->
       </div><!--container-->
    </section><!--navbar-colleted-->
    
    
- 
+ <!-- start-container-->
    <section class="container">
     <div class="row">
-
         <div class="col-lg-6 col-md-12 col-sm-12 ">
           <div class="card  p-5 mt-4 Congratulations">
               <i class="fas fa-award award text-center fs-1 fw-bold "></i>
@@ -226,15 +302,10 @@
             </div><!--card-body-->
           </div><!--card border-white-->
         </div><!--col-3 -->
-
       </div><!--row-->
-   </section><!--container-->
+   </section><!-- end-container-->
 
-
-
-
-
-   
+<!-- start-container-->
    <section class="container">
     <div class="row">
      <div class="row  row-cols-1 row-cols-md-2 g-4 ">
@@ -244,16 +315,14 @@
             <h5 class="float-end fs-6">Last 7 days</h5>
             <h4 class="fs-3  mx-3" >2.7K</h4>
              <span> <span class="green-text  mx-3">+5.2% </span>vs last 7 days</span>
-        </div><!--text-->
+           </div><!--text-->
 
             <div class="card-body">
               <div class="row">
                 <div class="col-4 button-progres">
                    <button >View Details</button>
                 </div><!--button-progres-->
-                   
-                   
-                
+
                 <div class="col-md-6">
                    <div class="cave-box"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
                        <canvas id="cave-hight-1" class="my-cavas-hight-lin chartjs-render-monitor" width="247" height="123" style="display: block; width: 247px; height: 123px;"></canvas>
@@ -262,33 +331,39 @@
 
                   <div class="count1"></div>
                <div class="row">
+
                 <div class="col-6">
                    <h5 class="fs-6 fst-normal">Goal: $ 1000000</h5>
                    <div class="progress w-100">
                       <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                   </div>
+                   </div><!--progress -->
+
                    <h5 class="fs-6 fst-normal"> Retention: 90%</h5>
                    <div class="progress w-100">
                      
                       <div class="progress-bar  bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                   </div>
-                </div>
+                   </div><!--progress -->
+                </div><!--col-6-->
                 
                 <div class="col-6">
                  <h5 class="fs-6 fst-normal">Users: 100K</h5>
                    <div class="progress w-100">
                       <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                   </div>
+                   </div><!--progress -->
+
                    <h5 class="fs-6 fst-normal">Duration: 1yr</h5>
                    <div class="progress w-100">
                       <div class="progress-bar bg-success " role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                   </div>
-                </div>
-             </div>
+                   </div><!--progress -->
+                </div><!--col-6-->
+
              </div><!--row-->
+           </div><!--row-->
         </div><!--card-body-->
       </div><!--card-->
     </div><!--col-6-->
+
+
     <div class="col-lg-6 col-md-12 col-sm-12">
       <div class="card2 back-a">
         <div class="text p-4">
@@ -297,8 +372,8 @@
                 <span class="white-text fs-1 fw-bold mx-4">163 </span>
                   <p class="fs-5 mx-4 p-xl-1">Tickets</p> 
              <div class="support-line"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
-                <canvas id="canvas-3" class="my-cavas-3 chartjs-render-monitor" style="display: block; width: 462px; height: 183px;"></canvas>
-             </div><!--support-line-->
+             <canvas id="canvas-3" class="my-cavas-3 chartjs-render-monitor" style="display: block; width: 462px; height: 183px;"></canvas>
+            </div><!--support-line-->
          </div><!--text-->
 
         <div class="card-body">
@@ -321,146 +396,110 @@
     </div><!--col-6-->
   </div><!--row row-cols-1-->
 </div><!--row-->
-</section><!--container-->
+</section><!-- end-container-->
 
 
-
+<!-- start-container-->
 <section class="container mt-1">
     <div class="row">
-<div class="row  row-cols-1 row-cols-md-3 g-4 ">
+  <div class="row  row-cols-1 row-cols-md-3 g-4 ">
     <div class="col-lg-4 col-md-6 col-sm-12 ">
       <div class="card2 back-a">
         <h4 class="title m-4 fs-5 ">Product Orders</h4>
         <div class="card-body">
-            <div class="chart-product "><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
-            <canvas id="canvas-4" class="my-cavas-3 chartjs-render-monitor" width="373" height="185" style="display: block; width: 373px; height: 185px;"></canvas>
-        </div>
+          <div class="chart-product "><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+          <canvas id="canvas-4" class="my-cavas-3 chartjs-render-monitor" width="373" height="185" style="display: block; width: 373px; height: 185px;"></canvas>
+          </div>
             <div class="dit-product">
-                <ul class="px-sm-1">
+               <ul class="px-sm-1">
                     <li class="finished">
-                    <i class="far fa-circle text-danger"></i>
-                    <h6 class="name-orders num1 ">Finished</h6>
-                        <p class="count">23043</p>
+                      <i class="far fa-circle text-danger"></i>
+                      <h6 class="name-orders num1 ">Finished</h6>
+                      <p class="count">23043</p>
                     </li>
+
                     <li class="pending">
-                    <i class="far fa-circle  text-warning"></i>
-
-                        <h6 class="name-orders num1">
-                            Pending
-                        </h6>
-                        <p class="count">
-                            14658
-                        </p>
+                      <i class="far fa-circle  text-warning"></i>
+                      <h6 class="name-orders num1">Pending</h6>
+                      <p class="count">14658</p>
                     </li>
+
                     <li class="rejected">
-                    <i class="far fa-circle text-info"></i>
-
-                        <h6 class="name-orders num1">
-                            Rejected
-                        </h6>
-                        <p class="count">
-                            4758
-                        </p>
+                      <i class="far fa-circle text-info"></i>
+                      <h6 class="name-orders num1">Rejected </h6>
+                      <p class="count">4758</p>
                     </li>
-                </ul>
-                </div> 
-            </div>
-       
-      </div>
-    </div>
+
+               </ul>
+            </div> <!--dit-product-->
+         </div><!--card-body-->
+      </div><!--card2-->
+    </div><!--col-lg-4 col-md-6 col-sm-12-->
+
+
     <div class="col-lg-4 col-md-6 col-sm-12">
       <div class="card2 back-a">
         <h4 class="title mt-4 mx-4 fs-5 ">Sales State</h4>
-        <h6 class="title mx-4 ">Last 6 Months</h6>
-        <div class="card-body">
+         <h6 class="title mx-4 ">Last 6 Months</h6>
+          <div class="card-body">
             <ul class="state d-flex" style="margin-left: -31px;">
                 <i class="fas fa-circle mt-1 text-info" style="margin-right: 7px;"></i>
-                <li  style="list-style: none; ">
-                <p class="stae"> Sales</p>
-                </li>
+                <li  style="list-style: none; "><p class="stae"> Sales</p> </li>
                  <i class="fas fa-circle mt-1 text-success" style="margin-right: 7px; margin-left: 15px;"></i>
-                 <li style="list-style: none;">
-                 <p class="stae">Sales</p>
-                 </li>
+                 <li style="list-style: none;"><p class="stae">Sales</p></li>
              </ul>
             <div class="cave-sate mt-5"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
             <canvas id="canvas-5" class="my-cavas-3 chartjs-render-monitor" width="373" height="185" style="display: block; width: 373px; height: 185px;"></canvas>
-        </div>
-        </div>
+        </div><!--cave-sate mt-5-->
+        </div><!--card-body-->
         
-      </div>
-    </div>
+      </div><!--card2 back-a-->
+    </div><!--col-lg-4 col-md-6 col-sm-12-->
+
+
+
     <div class="col-lg-4 col-md-12 col-sm-12">
       <div class="card2 back-a">
         <h4 class="title mt-3 mx-5 fs-5">Activity Timeline</h4>
-
         <div class="card-body px-5">
             <ul class="timeline-ul">
                 <li class="clint">
                    <i class="fas fa-plus"></i>
-                    <h3 class="timeline-title">
-                        Client Meeting
-                    </h3>
-                    <p class="timeline-prag">
-                        Bonbon macaroon jelly beans gummi bears jelly lollipop apple
-                    </p>
-                    
+                    <h3 class="timeline-title">Client Meeting</h3>
+                    <p class="timeline-prag">Bonbon macaroon jelly beans gummi bears jelly lollipop apple</p>
                 </li>
 
                 <li class="email">
                  <i class="fas fa-comment-alt" style="background: #fbb028;"></i>
-                    <h3 class="timeline-title">
-                        Email Newsletter
-                    </h3>
-                    <p class="timeline-prag">
-                        Cupcake gummi bears soufflé caramels candy
-                    </p>
-                    
-                </li>
+                    <h3 class="timeline-title">Email Newsletter</h3>
+                    <p class="timeline-prag">Cupcake gummi bears soufflé caramels candy</p>
+                    </li>
 
                 <li class="plan">
-                 <i class="fas fa-globe-europe" style="background: #00b12e;"></i>
-                    <h3 class="timeline-title">
-                        Plan Webinar
-                    </h3>
-                    <p class="timeline-prag">
-                        Candy ice cream cake. Halvah gummi bears
-                    </p>
-                   
-                </li>
+                  <i class="fas fa-globe-europe" style="background: #00b12e;"></i>
+                    <h3 class="timeline-title">Plan Webinar</h3>
+                    <p class="timeline-prag">Candy ice cream cake. Halvah gummi bears</p>
+                   </li>
 
                 <li class="launch">
-                 <i class="fas fa-rocket bg-danger"></i>
-                    <h3 class="timeline-title">
-                        Launch Website
-                    </h3>
-                    <p class="timeline-prag">
-                        Candy ice cream cake. Halvah gummi bears Cupcake
-                    </p>
-                    
-                </li>
+                  <i class="fas fa-rocket bg-danger"></i>
+                    <h3 class="timeline-title"> Launch Website</h3>
+                    <p class="timeline-prag">Candy ice cream cake. Halvah gummi bears Cupcake</p>
+                    </li>
 
                 <li class="clint">
                    <i class="fas fa-plus"></i>
-
-                    <h3 class="timeline-title">
-                        Marketing
-                    </h3>
-                    <p class="timeline-prag">
-                        Candy ice cream cake. Halvah gummi bears Cupcake
-                    </p>
-                    
-                </li>
+                    <h3 class="timeline-title"> Marketing</h3>
+                    <p class="timeline-prag">Candy ice cream cake. Halvah gummi bears Cupcake</p>
+                   </li>
 
             </ul>
-        </div>
-       
-      </div>
-    </div>
-  </div>
-
-</div><!--row-->
-</section><!--container-->
+          </div><!--card-body px-5-->
+        </div><!--card2 back-a-->
+      </div><!--col-lg-4 col-md-6 col-sm-12-->
+    </div><!-- row-cols-1 row-cols-md-3 g-4-->
+   </div><!--row-->
+</section><!-- end-container-->
 
 
 
@@ -469,14 +508,14 @@
    
 
 
-
+<!-- script -->
 <script src="js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-<!-- <script src="assets/js/plugin.js"></script> -->
 <script src="js/main.js"></script>
-<!-- <script src=""></script> -->
+
+
 </body>
 </html>
